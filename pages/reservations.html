@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservations | Make a Reservation</title>
+  </head>
+  <body>
+    <div class="reservations-wrapper">
+      <nav>
+        <div>
+          <h2>Reservations</h2>
+        </div>
+        <div>
+          <a href="/index.html">Return to Homepage</a>
+        </div>
+      </nav>
+      <form action="https://httpbin.org/post" method="post">
+        <div>
+          <p>Your Favorite Color:</p>
+          <input name="purple" type="checkbox" />
+          <label>Purple</label>
+          <input type="checkbox" />
+          <label>Green</label>
+          <input type="checkbox" />
+          <label>Fuscia</label>
+        </div>
+
+        <div>
+          <input name="first-name" type="text" placeholder="First Name" />
+          <input name="last-name" type="text" placeholder="Last Name" />
+        </div>
+
+        <div>
+          <input name="email" type="text" placeholder="Email" required="true" />
+          <input name="phone" type="text" placeholder="Phone Number" />
+        </div>
+
+        <div>
+          <input name="start-date" type="date" placeholder="Start Date" />
+          <input name="end-date" type="date" placeholder="End Date" />
+        </div>
+
+        <div>
+          <label for="cool_factor">How Cool Are You?</label>
+          <select name="cool_factor">
+            <option value="">Choose One</option>
+            <option>I'm very cool</option>
+            <option>I'm somewhat cool</option>
+            <option>I'm not cool</option>
+          </select>
+        </div>
+
+        <div>
+          <input name="free_puppy" type="radio" value="accepted" checked />
+          <label>I would like a free puppy with my reservation</label>
+        </div>
+        <div>
+          <input name="free_puppy" type="radio" value="rejected" />
+          <label>I would not like a free puppy with my reservation</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+      <footer>
+        <p>ReservationsRock@reservations.com</p>
+      </footer>
+    </div>
+  </body>
+</html>
